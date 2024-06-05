@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 const Footer = () => {
   return (
     <Box width={"100%"} height={"200px"} bgcolor={"#383A3C"}>
-      <Box width={"70%"} m={"auto"} display={"flex"}>
+      <Box width={"73%"} m={"auto"} display={"flex"}>
         <Box width={"25%"} mt={4} >
           <Typography fontWeight={800} color={"primary"} variant="body2">DRTK</Typography>
           <Typography fontWeight={200} color={"#EBEBEA"} variant="body2">Distribuidor Oficial DrayTek</Typography>

@@ -25,7 +25,7 @@ const Home = () => {
             ))}
           </Carousel>
         </Box>
-        <Box mt={5}>
+        <Box>
           <Productos />
         </Box>
 
@@ -36,9 +36,9 @@ const Home = () => {
             </Typography>
           </Box>
           <Box pt={6} display={"flex"} width={"73%"} m={"auto"}>
-            <Box sx={{ bgcolor: "#FFFFFF", p: 2.5, ml: 2 }}>
+            <Box sx={{ bgcolor: "#FFFFFF", p: 2.5,  }}>
               <iframe
-                width="460"
+                width="480"
                 height="260"
                 src="https://www.youtube.com/embed/mBv7FwXKEtI?si=JG3ryVcOYvhbKIFw"
                 title="YouTube video player"
@@ -59,7 +59,7 @@ const Home = () => {
             </Box>
             <Box sx={{ bgcolor: "#FFFFFF", p: 2.5, ml: 2 }}>
               <iframe
-                width="460"
+                width="480"
                 height="260"
                 src="https://www.youtube.com/embed/XYocOpfEzX4?si=421xrfv5sIgd7Zap"
                 title="YouTube video player"
@@ -87,7 +87,7 @@ const Home = () => {
               Nosotros
             </Typography>
           </Box>
-          <Box pt={5} width={"70%"} m={"auto"} display={"flex"}>
+          <Box pt={5} width={"73%"} m={"auto"} display={"flex"}>
             <Box width={"60%"}>
               <Box>
                 <Typography

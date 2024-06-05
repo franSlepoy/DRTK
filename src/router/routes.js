@@ -1,4 +1,6 @@
 import Home from "../components/pages/home/Home";
+import Productos from "../components/pages/productos/Products";
+import Routers from "../components/pages/productos/categorias/Routers";
 
 
 export const menuRoutes = [
@@ -7,21 +9,16 @@ export const menuRoutes = [
     path: "/",
     Element: Home,
   },
-  /* {
-    id: "products",
-    path: "/category/:category/",
-    Element: ProductList,
+   {
+    id: "productos",
+    path: "/Productos",
+    Element: Productos,
   },
   {
-    id: "productDetail",
-    path: "/productDetail/:id",
-    Element: ProductDetail,
+    id: "routers",
+    path: "/routers",
+    Element: Routers,
   },
   
-  {
-    id: "Asesoramiento",
-    path: "/Asesoramiento",
-    Element: Asesoramiento,
-  }, */
   
 ];
