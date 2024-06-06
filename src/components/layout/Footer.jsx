@@ -18,7 +18,7 @@ const Footer = () => {
           <Typography fontWeight={200} color={"#EBEBEA"} variant="body2"> <strong style={{fontWeight:500}}>Soporte:</strong> soporte@draytek.com.ar</Typography>
           <Typography fontWeight={200} color={"#EBEBEA"} variant="body2"> <strong style={{fontWeight:500}}>Administración:</strong> admin@draytek.com.ar</Typography>
         </Box>
-        <Box width={"15%"} mt={4}>
+        <Box ml={-5} width={"15%"} mt={4}>
           <img src="/300px-DrayTek_Logo3.png" alt="" />
         </Box>
       </Box>

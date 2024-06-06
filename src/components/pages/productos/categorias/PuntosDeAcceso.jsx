@@ -1,22 +1,22 @@
 import { Box, Grid, Typography } from "@mui/material";
 import ProductCard from "./ProductCard";
-import { routers } from "../ProductsData";
+import { puntosDeAcceso, routers } from "../ProductsData";
 
 
-const Routers = () => {
+const PuntosDeAcceso = () => {
   return (
     <>
       <Box pb={8} width={"100%"} bgcolor={"#FAFAFA"}>
         <Box width={"73%"} m={"auto"} pl={"5px"} pt={11}>
           <Typography sx={{ fontWeight: "450" }} variant="h1" color={"#F08D97"}>
-            Routers
+          Puntos de Acceso
           </Typography>
         </Box>
 
         <Box ml={-3}>
       <Box pt={4.5} width={"70%"} m={"auto"}>
         <Grid container spacing={2}>
-          {routers.map((card) => (
+          {puntosDeAcceso.map((card) => (
             <Grid item xs={12} sm={6} md={3} key={card.id}>
               <ProductCard
                 imagen={card.imagen}
@@ -38,4 +38,4 @@ const Routers = () => {
   );
 };
 
-export default Routers;
+export default PuntosDeAcceso;

@@ -13,6 +13,7 @@ const NavBar = () => {
 
             <Box
               mt={"20px"}
+              ml={1}
               width={"28.5%"}
               display={"flex"}
               justifyContent={"space-between"}
