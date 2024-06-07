@@ -14,6 +14,7 @@ const Home = () => {
               <Box key={"foto.id"} width={"100%"}>
                 <img
                   width={"100%"}
+                  height={"550px"}
                   style={{
                     width: "100%",
                     objectFit: "cover",
@@ -35,10 +36,10 @@ const Home = () => {
               Institucional
             </Typography>
           </Box>
-          <Box pt={6} display={"flex"} width={"73%"} m={"auto"}>
-            <Box sx={{ bgcolor: "#FFFFFF", p: 2.5,  }}>
+          <Box pt={6} display={"flex"} width={"75%"} m={"auto"}>
+            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5,  }}>
               <iframe
-                width="480"
+                width="100%"
                 height="260"
                 src="https://www.youtube.com/embed/mBv7FwXKEtI?si=JG3ryVcOYvhbKIFw"
                 title="YouTube video player"
@@ -57,9 +58,9 @@ const Home = () => {
                 Perfil de la Empresa
               </Typography>
             </Box>
-            <Box sx={{ bgcolor: "#FFFFFF", p: 2.5, ml: 2 }}>
+            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5, ml: 2 }}>
               <iframe
-                width="480"
+                width="100%"
                 height="260"
                 src="https://www.youtube.com/embed/XYocOpfEzX4?si=421xrfv5sIgd7Zap"
                 title="YouTube video player"

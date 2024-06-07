@@ -2,6 +2,22 @@ import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const handleDownloadPDF = () => {
+    // Construye la URL del archivo PDF
+    const pdfURL = "/AminoMed2024.pdf";
+
+    // Crea un enlace temporal
+    const link = document.createElement("a");
+    link.href = pdfURL;
+    link.download = "AminoMed2024.pdf"; // Nombre del archivo a descargar
+
+    // Simula un clic en el enlace para iniciar la descarga
+    document.body.appendChild(link);
+    link.click();
+
+    // Elimina el enlace temporal
+    document.body.removeChild(link);
+  };
   return (
     <>
       <Box>
@@ -50,7 +66,7 @@ const NavBar = () => {
               </Typography>
               <Typography
                 component={Link}
-                to="/  Soluciones"
+                to="/soluciones"
                 sx={{
                   textDecoration: "none",
                   color: "secondary.main",

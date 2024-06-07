@@ -13,25 +13,25 @@ const Switches = () => {
         </Box>
 
         <Box ml={-3}>
-      <Box pt={4.5} width={"70%"} m={"auto"}>
-        <Grid container spacing={2}>
-          {switches.map((card) => (
-            <Grid item xs={12} sm={6} md={3} key={card.id}>
-              <ProductCard
-                imagen={card.imagen}
-                titulo={card.titulo}
-                descripcion1={card.descripcion1}
-                descripcion2={card.descripcion2}
-                descripcion3={card.descripcion3}
-                descripcion4={card.descripcion4}
-                descripcion5={card.descripcion5}
-                link={card.link}
-              />
+          <Box pt={4.5} width={"70%"} m={"auto"}>
+            <Grid container spacing={2}>
+              {switches.map((card) => (
+                <Grid item xs={12} sm={6} md={3} key={card.id}>
+                  <ProductCard
+                    imagen={card.imagen}
+                    titulo={card.titulo}
+                    descripcion1={card.descripcion1}
+                    descripcion2={card.descripcion2}
+                    descripcion3={card.descripcion3}
+                    descripcion4={card.descripcion4}
+                    descripcion5={card.descripcion5}
+                    link={card.link}
+                  />
+                </Grid>
+              ))}
             </Grid>
-          ))}
-        </Grid>
-      </Box>
-    </Box>
+          </Box>
+        </Box>
       </Box>
     </>
   );
