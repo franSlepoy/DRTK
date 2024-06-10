@@ -23,7 +23,7 @@ const ProductCard = ({
         height: '100%',
         display: "flex",
         flexDirection: "column",
-        '&:hover .title': { // Selecciona el título cuando se hace hover sobre la tarjeta
+        '&:hover .title': { 
             fontWeight: '600',
           },
       }}

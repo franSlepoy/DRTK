@@ -1,6 +1,7 @@
 import Home from "../components/pages/home/Home";
 import Productos from "../components/pages/productos/Products";
 import Accesorios from "../components/pages/productos/categorias/Accesorios";
+import DetalleDeProducto from "../components/pages/productos/categorias/DetalleDeProducto";
 import PuntosDeAcceso from "../components/pages/productos/categorias/PuntosDeAcceso";
 import Routers from "../components/pages/productos/categorias/Routers";
 import Switches from "../components/pages/productos/categorias/Switches";
@@ -48,6 +49,11 @@ export const menuRoutes = [
     id: "soluciones",
     path: "/soluciones",
     Element: Soluciones,
+  },
+  {
+    id: "detalleDeProducto",
+    path: "/detalleDeProducto/:id",
+    Element: DetalleDeProducto,
   },
   
   

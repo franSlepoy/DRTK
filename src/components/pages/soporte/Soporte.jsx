@@ -5,14 +5,14 @@ import SoporteCard from "./SoporteCard";
 const Soporte = () => {
   return (
     <>
-      <Box ml={-2} bgcolor={"#FAFAFA"} pt={8} pb={10}>
+      <Box  bgcolor={"#FAFAFA"} pt={8} pb={10}>
         <Box textAlign={"center"} mb={5}>
           <Typography fontWeight={"300"} variant="h1" color={"secondary"}>
             Soporte Técnico
           </Typography>
         </Box>
 
-        <Box pt={4.5} width={"70%"} m={"auto"}>
+        <Box pt={4.5} width={"80%"} m={"auto"}>
           <Grid container spacing={2}>
             {soporteData.map((card) => (
               <Grid item xs={12} sm={6} md={3} key={card.id}>
@@ -25,7 +25,7 @@ const Soporte = () => {
             ))}
           </Grid>
         </Box>
-        <Box width={"65%"} m={"auto"}>
+        <Box width={"73%"} m={"auto"}>
           <Box width={"72%"}>
             <Typography
               lineHeight={"21px"}
@@ -33,7 +33,7 @@ const Soporte = () => {
               mt={5}
               variant="subtitle1"
             >
-              <strong>
+              <strong style={{fontWeight:"600"}}>
                 Tel: 2152-3755 |
                 <a
                   style={{
@@ -54,9 +54,9 @@ const Soporte = () => {
               variant="subtitle1"
             >
               Al comunicarse con soporte técnico por favor indique el{" "}
-              <strong>Modelo,</strong> el {""}
-              <strong>Número de Serie</strong> y la{" "}
-              <strong>Versión de Firmware</strong> del producto por el cual está
+              <strong style={{fontWeight:"600"}}>Modelo,</strong> el {""}
+              <strong style={{fontWeight:"600"}}>Número de Serie</strong> y la{" "}
+              <strong style={{fontWeight:"600"}}>Versión de Firmware</strong> del producto por el cual está
               realizando la consulta.
             </Typography>
             <Typography

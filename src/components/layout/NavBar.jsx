@@ -1,15 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const handleDownloadPDF = () => {
     // Construye la URL del archivo PDF
-    const pdfURL = "/AminoMed2024.pdf";
+    const pdfURL = "/Catalogo.pdf";
 
     // Crea un enlace temporal
     const link = document.createElement("a");
     link.href = pdfURL;
-    link.download = "AminoMed2024.pdf"; // Nombre del archivo a descargar
+    link.download = "Catalogo.pdf"; // Nombre del archivo a descargar
 
     // Simula un clic en el enlace para iniciar la descarga
     document.body.appendChild(link);
@@ -23,13 +23,13 @@ const NavBar = () => {
       <Box>
         <Box pt={"6px"} height={"72px"} sx={{ bgcolor: "#EFEFEF" }}>
           <Box display={"flex"}>
-            <Box component={Link} to="/" mt={2} pl={"2%"} pr={"1.6%"}>
+            <Box component={Link} to="/" mt={2} pl={2.8} pr={"1.6%"}>
               <img src="/300px-DrayTek_Logo3.png" alt="logo de la empresa" />
             </Box>
 
             <Box
               mt={"20px"}
-              ml={1}
+              ml={0}
               width={"28.5%"}
               display={"flex"}
               justifyContent={"space-between"}
@@ -80,13 +80,17 @@ const NavBar = () => {
                 Soluciones
               </Typography>
               <Typography
-                component={Link}
-                to="/Catálogo"
+                component={Button}
+                onClick={handleDownloadPDF}
                 sx={{
+                  mt:"-8px",
+                  p:0,
+                  textTransform:"none",
                   textDecoration: "none",
                   color: "secondary.main",
                   "&:hover": {
-                    color: "primary.main", // Cambia a tu color deseado
+                    color: "primary.main", 
+                    bgcolor:"transparent"
                   },
                 }}
                 variant="subtitle1"
@@ -96,7 +100,7 @@ const NavBar = () => {
               </Typography>
             </Box>
 
-            <Box width={"59%"} mt={2} pl={"31%"} display={"flex"}>
+            <Box width={"59%"} mt={"20px"} pl={"31.5%"} display={"flex"}>
               <Typography
                 component={Link}
                 to="/Nosotros"

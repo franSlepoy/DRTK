@@ -9,12 +9,12 @@ const Home = () => {
     <>
       <Box bgcolor={"#FAFAFA"}>
         <Box>
-          <Carousel sx={{ height: "550px" }}>
+          <Carousel sx={{ height: "450px" }}>
             {fotosCarousel.map((foto) => (
-              <Box key={"foto.id"} width={"100%"}>
+              <Box key={"foto.id"}>
                 <img
                   width={"100%"}
-                  height={"550px"}
+                  height={"450px"}
                   style={{
                     width: "100%",
                     objectFit: "cover",
@@ -37,7 +37,7 @@ const Home = () => {
             </Typography>
           </Box>
           <Box pt={6} display={"flex"} width={"75%"} m={"auto"}>
-            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5,  }}>
+            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5 }}>
               <iframe
                 width="100%"
                 height="260"
@@ -153,7 +153,7 @@ const Home = () => {
           </Box>
         </Box>
 
-        <Box  mt={12}>
+        <Box mt={12}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6566.751259535077!2d-
 58.37466062396735!3d-
@@ -162,7 +162,7 @@ const Home = () => {
 58.370923!5e0!3m2!1ses!2sar!4v1626740021379!5m2!1ses!2sar"
             width="100%"
             height="320"
-            style={{border:"none"}}
+            style={{ border: "none" }}
             allowfullscreen=""
             loading="lazy"
           ></iframe>

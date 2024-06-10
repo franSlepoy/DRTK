@@ -4,7 +4,7 @@ import { solucionesData } from "./SolucionesData";
 
 const Soluciones = () => {
   return (
-    <Box ml={-2} bgcolor={"#FAFAFA"} pt={8} pb={10}>
+    <Box  bgcolor={"#FAFAFA"} pt={8} pb={10}>
       <Box textAlign={"center"} mb={5}>
         <Typography fontWeight={"300"} variant="h1" color={"secondary"}>
           Soluciones Destacadas
