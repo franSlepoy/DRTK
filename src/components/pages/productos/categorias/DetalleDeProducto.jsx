@@ -71,23 +71,195 @@ const DetalleDeProducto = () => {
               />
             </Box>
           </Box>
-          <Box mt={6} display={"flex"}>
-            <Box>
-              <Typography variant="h2">{producto.descripcionDetalle1}</Typography>
-              <Typography>{producto.subDescripcionDetalle1}</Typography>
-            </Box>
-            <Box>
-              <Typography>{producto.descripcionDetalle2}</Typography>
-              <Typography>{producto.subDescripcionDetalle2}</Typography>
-            </Box>
-            <Box>
-              <Typography>{producto.descripcionDetalle3}</Typography>
-              <Typography>{producto.subDescripcionDetalle3}</Typography>
-            </Box>
-            <Box>
-              <Typography>{producto.descripcionDetalle4}</Typography>
-              <Typography>{producto.subDescripcionDetalle4}</Typography>
-            </Box>
+        </Box>
+        <Box width={"80%"} m={"auto"} mt={8} display={"flex"}>
+          <Box
+            width={"25%"}
+            pl={0}
+            pr={2}
+            pb={2}
+            pt={2}
+            borderRight={"solid #7A7A7A 0.1px"}
+          >
+            <Typography textAlign={"center"} color={"#383A3C"} variant="h2">
+              {producto.descripcionDetalle1}
+            </Typography>
+            <Typography
+              textAlign={"center"}
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.subDescripcionDetalle1}
+            </Typography>
+          </Box>
+          <Box width={"25%"} p={2} borderRight={"solid #7A7A7A 1px"}>
+            <Typography textAlign={"center"} color={"#383A3C"} variant="h2">
+              {producto.descripcionDetalle2}
+            </Typography>
+            <Typography
+              textAlign={"center"}
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+              width={"160px"}
+              m={"auto"}
+            >
+              {producto.subDescripcionDetalle2}
+            </Typography>
+          </Box>
+          <Box width={"25%"} p={2} borderRight={"solid #7A7A7A 0.1px"}>
+            <Typography textAlign={"center"} color={"#383A3C"} variant="h2">
+              {producto.descripcionDetalle3}
+            </Typography>
+            <Typography
+              textAlign={"center"}
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+              width={"160px"}
+              m={"auto"}
+            >
+              {producto.subDescripcionDetalle3}
+            </Typography>
+          </Box>
+          <Box width={"25%"} p={2}>
+            <Typography textAlign={"center"} color={"#383A3C"} variant="h2">
+              {producto.descripcionDetalle4}
+            </Typography>
+            <Typography
+              textAlign={"center"}
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+              width={"180px"}
+              m={"auto"}
+            >
+              {producto.subDescripcionDetalle4}
+            </Typography>
+          </Box>
+        </Box>
+        <Box mt={10} textAlign={"center"}>
+          <img src={producto.imagen2} alt="imagen de producto" />
+        </Box>
+
+        <Box
+          width={"73%"}
+          justifyContent={"space-between"}
+          m={"auto"}
+          display={"flex"}
+          pt={5}
+        >
+          <Box>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada1}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada2}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada3}
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada4}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada5}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada6}
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada7}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada8}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada9}
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          pt={2}
+          pb={12}
+          width={"73%"}
+          justifyContent={"space-between"}
+          m={"auto"}
+          display={"flex"}
+        >
+          <Box>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada10}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada11}
+            </Typography>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada12}
+            </Typography>
+          </Box>
+
+          <Box>
+            <Typography
+              lineHeight={"21px"}
+              color={"#383A3C"}
+              variant="subtitle1"
+            >
+              {producto.entrada13}
+            </Typography>
           </Box>
         </Box>
       </Box>

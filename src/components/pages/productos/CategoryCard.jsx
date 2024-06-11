@@ -15,7 +15,7 @@ const CategoryCard = ({ id, link, titulo, imagen }) => {
           p: 2.5,
           m: "5px",
           '&:hover .title': { // Selecciona el título cuando se hace hover sobre la tarjeta
-            fontWeight: '600',
+            fontWeight: '500',
           },
         }}
       >

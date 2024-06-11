@@ -1,4 +1,5 @@
 import Home from "../components/pages/home/Home";
+import Nosotros from "../components/pages/nosotros/Nosotros";
 import Productos from "../components/pages/productos/Products";
 import Accesorios from "../components/pages/productos/categorias/Accesorios";
 import DetalleDeProducto from "../components/pages/productos/categorias/DetalleDeProducto";
@@ -54,6 +55,11 @@ export const menuRoutes = [
     id: "detalleDeProducto",
     path: "/detalleDeProducto/:id",
     Element: DetalleDeProducto,
+  },
+  {
+    id: "nosotros",
+    path: "/nosotros",
+    Element: Nosotros,
   },
   
   

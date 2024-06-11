@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
-    <Box width={"100%"} height={"200px"} bgcolor={"#383A3C"}>
+    <Box  id="seccionDestino1" width={"100%"} height={"200px"} bgcolor={"#383A3C"}>
       <Box width={"73%"} m={"auto"} display={"flex"}>
         <Box width={"25%"} mt={4}>
           <Typography fontWeight={800} color={"primary"} variant="body2">

@@ -24,7 +24,7 @@ const ProductCard = ({
         display: "flex",
         flexDirection: "column",
         '&:hover .title': { 
-            fontWeight: '600',
+            fontWeight: '500',
           },
       }}
     >
