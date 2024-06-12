@@ -162,7 +162,7 @@ const Home = () => {
 58.370923!5e0!3m2!1ses!2sar!4v1626740021379!5m2!1ses!2sar"
             width="100%"
             height="320"
-            style={{ border: "none" }}
+            style={{marginBottom:-4, border: "none" }}
             allowfullscreen=""
             loading="lazy"
           ></iframe>

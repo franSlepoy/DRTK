@@ -6,8 +6,10 @@ import DetalleDeProducto from "../components/pages/productos/categorias/DetalleD
 import PuntosDeAcceso from "../components/pages/productos/categorias/PuntosDeAcceso";
 import Routers from "../components/pages/productos/categorias/Routers";
 import Switches from "../components/pages/productos/categorias/Switches";
+import Vigor2915 from "../components/pages/productos/detallesDeProductos/Vigor2915";
 import Soluciones from "../components/pages/soluciones/Soluciones";
 import Soporte from "../components/pages/soporte/Soporte";
+ 
 
 
 export const menuRoutes = [
@@ -60,6 +62,11 @@ export const menuRoutes = [
     id: "nosotros",
     path: "/nosotros",
     Element: Nosotros,
+  },
+  {
+    id: "Vigor2915.jsx",
+    path: "/Vigor2915",
+    Element: Vigor2915 ,
   },
   
   

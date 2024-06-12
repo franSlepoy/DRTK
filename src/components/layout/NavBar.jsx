@@ -7,14 +7,29 @@ import DropdownMenu1 from "./DropdownMenu1";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleMouseEnter = () => setMenuOpen(true);
-  const handleMouseLeave = () => setMenuOpen(false);
-
   const [menuOpen1, setMenuOpen1] = useState(false);
 
-  const handleMouseEnter1 = () => setMenuOpen1(true);
-  const handleMouseLeave1 = () => setMenuOpen1(false);
+  const handleMouseEnterProductos = () => {
+    setMenuOpen(true);
+    setMenuOpen1(false); // Cierra el menú de Soporte
+  };
+
+  const handleMouseLeaveProductos = () => {
+    setTimeout(() => {
+      setMenuOpen(false);
+    }, 100);
+  };
+
+  const handleMouseEnterSoporte = () => {
+    setMenuOpen1(true);
+    setMenuOpen(false); // Cierra el menú de Productos
+  };
+
+  const handleMouseLeaveSoporte = () => {
+    setTimeout(() => {
+      setMenuOpen1(false);
+    }, 100);
+  };
 
   const handleDownloadPDF = () => {
     const pdfURL = "/Catalogo.pdf";
@@ -45,7 +60,7 @@ const NavBar = () => {
               <Typography
                 component={Link}
                 to="/productos"
-                onMouseEnter={handleMouseEnter}
+                onMouseEnter={handleMouseEnterProductos}
                 sx={{
                   textDecoration: "none",
                   color: "secondary.main",
@@ -58,9 +73,9 @@ const NavBar = () => {
                 Productos
               </Typography>
               <Typography
-                onMouseEnter={handleMouseEnter1}
-                component={Link}
-                to="/Soporte"
+               component={Link}
+               to="/soporte"
+                onMouseEnter={handleMouseEnterSoporte}
                 sx={{
                   textDecoration: "none",
                   color: "secondary.main",
@@ -108,8 +123,8 @@ const NavBar = () => {
 
             <Box width={"59%"} mt={"20px"} pl={"31.5%"} display={"flex"}>
               <Typography
-              component={Link}
-              to={"/nosotros"}
+                component={Link}
+                to={"/nosotros"}
                 variant="subtitle1"
                 sx={{
                   textDecoration: "none",
@@ -120,9 +135,7 @@ const NavBar = () => {
                   },
                 }}
               >
-               
-                  Nosotros
-               
+                Nosotros
               </Typography>
               <Typography
                 ml={"7%"}
@@ -145,14 +158,14 @@ const NavBar = () => {
         </Box>
         {menuOpen && (
           <DropdownMenu
-            handleMouseEnter={handleMouseEnter}
-            handleMouseLeave={handleMouseLeave}
+            handleMouseEnter={handleMouseEnterProductos}
+            handleMouseLeave={handleMouseLeaveProductos}
           />
         )}
         {menuOpen1 && (
           <DropdownMenu1
-            handleMouseEnter1={handleMouseEnter1}
-            handleMouseLeave1={handleMouseLeave1}
+            handleMouseEnter={handleMouseEnterSoporte}
+            handleMouseLeave={handleMouseLeaveSoporte}
           />
         )}
       </Box>

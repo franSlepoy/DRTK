@@ -2,21 +2,21 @@ import { Box, Typography, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { soporteData } from "../pages/soporte/SoporteData";
 
-const DropdownMenu1 = ({ handleMouseEnter1, handleMouseLeave1 }) => {
+const DropdownMenu1 = ({ handleMouseEnter, handleMouseLeave }) => {
   return (
     <Box
-      onMouseEnter={handleMouseEnter1}
-      onMouseLeave={handleMouseLeave1}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       sx={{
         position: "absolute",
         top: "72px",
         left: "21%",
-        width: "10%",
+        width: "12%",
         bgcolor: "#FFFFFF",
         boxShadow: 3,
         display: "block",
         zIndex: 10,
-        p: 2,
+        p: "32px",
       }}
     >
       <Grid container spacing={2}>
@@ -29,8 +29,8 @@ const DropdownMenu1 = ({ handleMouseEnter1, handleMouseLeave1 }) => {
                 fontWeight: "500",
               },
             }}
-            pl={1}
-            pt={1}
+            mt={"8px"}
+            p={"4px"}
             color={"#7D7D7D"}
             lineHeight={"16px"}
             variant="body2"
@@ -44,28 +44,6 @@ const DropdownMenu1 = ({ handleMouseEnter1, handleMouseLeave1 }) => {
               {category.titulo}
             </Link>
           </Typography>
-          /*  {categoriesWithProducts[category.titulo]?.map((product) => (
-              <Typography
-                color={"#7D7D7D"}
-                lineHeight={"16px"}
-                variant="body2"
-                key={product.id}
-                sx={{
-                  mt: 1,
-                  "&:hover": {
-                    color: "#F08D97",
-                    fontWeight: "500",
-                  },
-                }}
-              >
-                <Link
-                  to={product.link}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  {product.titulo}
-                </Link>
-              </Typography>
-            ))} */
         ))}
       </Grid>
     </Box>

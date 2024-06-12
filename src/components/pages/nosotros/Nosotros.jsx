@@ -4,7 +4,7 @@ const Nosotros = () => {
   return (
     <>
       <Box pb={12}>
-        <Box id="seccionDestino" textAlign={"center"} mt={12}>
+        <Box id="seccionDestino" textAlign={"center"} mt={8}>
           <Typography fontWeight={"300"} variant="h1" color={"secondary"}>
             Nosotros
           </Typography>

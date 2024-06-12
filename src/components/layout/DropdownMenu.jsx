@@ -25,28 +25,25 @@ const DropdownMenu = ({ handleMouseEnter, handleMouseLeave }) => {
         position: "absolute",
         top: "72px",
         left: "12%",
-        width: "40%",
+        width: "32%",
         bgcolor: "#FFFFFF",
         boxShadow: 3,
         display: "block",
         zIndex: 10,
-        p: 2,
+        p: "20px",
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container >
         {categorias.map((category) => (
           <Grid item xs={3} key={category.id}>
             <Typography
-              sx={{
-                "&:hover": {
-                  color: "primary.main",
-                  fontWeight: "500",
-                },
-              }}
-              pb={2}
+              fontWeight={500}
+              mt={"8px"}
+              p={"4px"}
               lineHeight={"16px"}
               variant="body2"
               color="#F08D97"
+              
             >
               <Link
                 to={category.link}
@@ -62,7 +59,8 @@ const DropdownMenu = ({ handleMouseEnter, handleMouseLeave }) => {
                 variant="body2"
                 key={product.id}
                 sx={{
-                  mt: 1,
+                  mt: "8px",
+                  p: "4px",
                   "&:hover": {
                     color: "#F08D97",
                     fontWeight: "500",
@@ -73,7 +71,7 @@ const DropdownMenu = ({ handleMouseEnter, handleMouseLeave }) => {
                   to={product.link}
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
-                  {product.titulo}
+                  {product.tituloMenu}
                 </Link>
               </Typography>
             ))}

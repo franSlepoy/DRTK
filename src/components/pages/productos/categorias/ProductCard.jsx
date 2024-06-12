@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { solucionesData } from "../../soluciones/SolucionesData";
 
 const ProductCard = ({
   id,
@@ -31,11 +32,11 @@ const ProductCard = ({
       <Box textAlign={"center"}>
         <img height={"120px"} src={imagen} alt="imagen de producto" />
       </Box>
-      <Box mt={2}>
+      <Box mt={2} >
         <Typography className="title" sx={{lineHeight:"24px"}} fontWeight={300} color={"#F08D97"} variant="h6">
           {titulo}
         </Typography>
-        <Typography mt={2} fontWeight={400} color={"#7D7D7D"} variant="body2">
+        <Typography  mt={2} fontWeight={400} color={"#7D7D7D"} variant="body2">
           {descripcion1}
         </Typography>
         <Typography

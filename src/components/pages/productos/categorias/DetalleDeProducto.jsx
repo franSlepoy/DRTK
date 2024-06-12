@@ -89,6 +89,8 @@ const DetalleDeProducto = () => {
               lineHeight={"21px"}
               color={"#383A3C"}
               variant="subtitle1"
+              width={"200px"}
+              m={"auto"}
             >
               {producto.subDescripcionDetalle1}
             </Typography>
