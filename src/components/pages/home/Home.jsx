@@ -9,14 +9,15 @@ const Home = () => {
     <>
       <Box bgcolor={"#FAFAFA"}>
         <Box>
-          <Carousel sx={{ height: "450px" }}>
+          <Carousel sx={{ height: { xs: "250px", md: "450px" } }}>
             {fotosCarousel.map((foto) => (
               <Box key={"foto.id"}>
                 <img
                   width={"100%"}
-                  height={"450px"}
+                  height={"100%"}
                   style={{
                     width: "100%",
+                    height: "100%",
                     objectFit: "cover",
                   }}
                   src={foto.imagen}
@@ -36,46 +37,41 @@ const Home = () => {
               Institucional
             </Typography>
           </Box>
-          <Box pt={6} display={"flex"} width={"75%"} m={"auto"}>
-            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5 }}>
+          <Box
+            pt={6}
+            display={"flex"}
+            flexDirection={{ xs: "column", md: "row" }}
+            width={{ xs: "92%", md: "75%" }}
+            m={"auto"}
+            gap={2}
+          >
+            <Box width={{ xs: "100%", md: "50%" }} sx={{ bgcolor: "#FFFFFF", p: 2.5 }}>
               <iframe
                 width="100%"
                 height="260"
                 src="https://www.youtube.com/embed/mBv7FwXKEtI?si=JG3ryVcOYvhbKIFw"
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;
- gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
-              <Typography
-                fontWeight={300}
-                color={"#F08D97"}
-                pt={1.5}
-                variant="h3"
-              >
+              <Typography fontWeight={300} color={"#F08D97"} pt={1.5} variant="h3">
                 Perfil de la Empresa
               </Typography>
             </Box>
-            <Box width={"50%"} sx={{ bgcolor: "#FFFFFF", p: 2.5, ml: 2 }}>
+            <Box width={{ xs: "100%", md: "50%" }} sx={{ bgcolor: "#FFFFFF", p: 2.5 }}>
               <iframe
                 width="100%"
                 height="260"
                 src="https://www.youtube.com/embed/XYocOpfEzX4?si=421xrfv5sIgd7Zap"
                 title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media;
- gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
-              <Typography
-                fontWeight={300}
-                color={"#F08D97"}
-                pt={1.5}
-                variant="h3"
-              >
+              <Typography fontWeight={300} color={"#F08D97"} pt={1.5} variant="h3">
                 ¿Qué caracteriza a un Router DrayTek?
               </Typography>
             </Box>
@@ -83,13 +79,19 @@ const Home = () => {
         </Box>
 
         <Box>
-          <Box  id="seccionDestino" textAlign={"center"} mt={12}>
+          <Box id="seccionDestino" textAlign={"center"} mt={12}>
             <Typography fontWeight={"300"} variant="h1" color={"secondary"}>
               Nosotros
             </Typography>
           </Box>
-          <Box pt={5} width={"73%"} m={"auto"} display={"flex"}>
-            <Box width={"60%"}>
+          <Box
+            pt={5}
+            width={{ xs: "92%", md: "73%" }}
+            m={"auto"}
+            display={"flex"}
+            flexDirection={{ xs: "column", md: "row" }}
+          >
+            <Box width={{ xs: "100%", md: "60%" }}>
               <Box>
                 <Typography
                   color={"#F08D97"}
@@ -147,23 +149,23 @@ const Home = () => {
                 </Typography>
               </Box>
             </Box>
-            <Box mt={6} ml={10}>
-              <img src="/about_banner 1.png" alt="" />
+            <Box mt={6} ml={{ xs: 0, md: 10 }}>
+              <img
+                src="/about_banner 1.png"
+                alt=""
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
             </Box>
           </Box>
         </Box>
 
         <Box mt={12}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6566.751259535077!2d-
-58.37466062396735!3d-
-34.61994672182108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95a33268fa0ed447%3A0xf202
-2ea3dcc4500!2sdraytek%20argentina%20google%20maps!3m2!1d-34.624086999999996!2d-
-58.370923!5e0!3m2!1ses!2sar!4v1626740021379!5m2!1ses!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6566.751259535077!2d-58.37466062396735!3d-34.61994672182108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95a33268fa0ed447%3A0xf2022ea3dcc4500!2sdraytek%20argentina%20google%20maps!3m2!1d-34.624086999999996!2d-58.370923!5e0!3m2!1ses!2sar!4v1626740021379!5m2!1ses!2sar"
             width="100%"
             height="320"
-            style={{marginBottom:-4, border: "none" }}
-            allowfullscreen=""
+            style={{ marginBottom: -4, border: "none" }}
+            allowFullScreen=""
             loading="lazy"
           ></iframe>
         </Box>

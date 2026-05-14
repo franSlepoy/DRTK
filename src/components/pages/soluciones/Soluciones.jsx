@@ -11,8 +11,8 @@ const Soluciones = () => {
         </Typography>
       </Box>
 
-      <Box ml={-3}>
-        <Box pt={4.5} width={"70%"} m={"auto"}>
+      <Box ml={{ xs: 0, md: -3 }}>
+        <Box pt={4.5} width={{ xs: "92%", md: "70%" }} m={"auto"}>
           <Grid container spacing={2}>
             {solucionesData.map((card) => (
               <Grid item xs={12} sm={6} md={3} key={card.id}>

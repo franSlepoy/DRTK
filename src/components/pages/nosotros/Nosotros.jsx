@@ -9,8 +9,8 @@ const Nosotros = () => {
             Nosotros
           </Typography>
         </Box>
-        <Box pt={5} width={"73%"} m={"auto"} display={"flex"}>
-          <Box width={"60%"}>
+        <Box pt={5} width={{ xs: "92%", md: "73%" }} m={"auto"} display={"flex"} flexDirection={{ xs: "column", md: "row" }}>
+          <Box width={{ xs: "100%", md: "60%" }}>
             <Box>
               <Typography
                 color={"#F08D97"}
@@ -67,8 +67,8 @@ const Nosotros = () => {
               </Typography>
             </Box>
           </Box>
-          <Box mt={6} ml={10}>
-            <img src="/about_banner 1.png" alt="" />
+          <Box mt={6} ml={{ xs: 0, md: 10 }}>
+            <img src="/about_banner 1.png" alt="" style={{ maxWidth: "100%", height: "auto" }} />
           </Box>
         </Box>
       </Box>

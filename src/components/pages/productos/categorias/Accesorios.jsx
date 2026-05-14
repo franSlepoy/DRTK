@@ -6,14 +6,14 @@ const Accesorios = () => {
   return (
     <>
       <Box pb={8} width={"100%"} bgcolor={"#FAFAFA"}>
-        <Box width={"73%"} m={"auto"} pl={"5px"} pt={11}>
+        <Box width={{ xs: "92%", md: "73%" }} m={"auto"} pl={"5px"} pt={11}>
           <Typography sx={{ fontWeight: "450" }} variant="h1" color={"#F08D97"}>
             Accesorios
           </Typography>
         </Box>
 
-        <Box ml={-3}>
-          <Box pt={4.5} width={"70%"} m={"auto"}>
+        <Box ml={{ xs: 0, md: -3 }}>
+          <Box pt={4.5} width={{ xs: "92%", md: "70%" }} m={"auto"}>
             <Grid container spacing={2}>
               {accesorios.map((card) => (
                 <Grid item xs={12} sm={6} md={3} key={card.id}>

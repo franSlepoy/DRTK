@@ -12,7 +12,7 @@ const Soporte = () => {
           </Typography>
         </Box>
 
-        <Box pt={4.5} width={"80%"} m={"auto"}>
+        <Box pt={4.5} width={{ xs: "92%", md: "80%" }} m={"auto"}>
           <Grid container spacing={2}>
             {soporteData.map((card) => (
               <Grid item xs={12} sm={6} md={3} key={card.id}>
@@ -25,8 +25,8 @@ const Soporte = () => {
             ))}
           </Grid>
         </Box>
-        <Box width={"73%"} m={"auto"}>
-          <Box width={"72%"}>
+        <Box width={{ xs: "92%", md: "73%" }} m={"auto"}>
+          <Box width={{ xs: "100%", md: "72%" }}>
             <Typography
               lineHeight={"21px"}
               color={"#7D7D7D"}

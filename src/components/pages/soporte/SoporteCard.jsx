@@ -20,10 +20,9 @@ const SoporteCard = ({ id, link, titulo, imagen }) => {
       >
         <Box textAlign={"center"}>
           <img
-            height={"220px"}
-            width={"220px"}
             src={imagen}
             alt="logo de soporte"
+            style={{ width: "220px", maxWidth: "100%", height: "auto" }}
           />
         </Box>
         <Box>
